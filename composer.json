@@ -1,0 +1,16 @@
+{
+    "name": "thijmendf/groundwork-project",
+    "description": "The project root for the Groundwork framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thijmen de Frankrijker",
+            "email": "info@jurasoft.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "thijmendf/groundwork": "dev-main"
+    }
+}

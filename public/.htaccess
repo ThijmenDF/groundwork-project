@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+# If the path isn't a file...
+RewriteCond %{REQUEST_FILENAME} !-f
+# Send it to index.php
+RewriteRule ^.*$ /index.php [L,QSA]
