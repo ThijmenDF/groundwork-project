@@ -6,7 +6,7 @@ ini_set('display_errors', 'off');
 error_reporting(E_ALL);
 
 // Require the auto-loader
-require './vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Groundwork\Server;
 

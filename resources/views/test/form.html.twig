@@ -1,8 +1,3 @@
-
-{% extends "layout/homepage.html.twig" %}
-
-{% block content %}
-
 <form method='post' class='w-2/5 mx-auto my-10'>
     <input type='text' name='text' value="{{ old('text') }}"><br>
     {% if invalid('text') %}
@@ -21,5 +16,3 @@
     <br>
     <input type='submit' value='Send'>
 </form>
-
-{% endblock %}
