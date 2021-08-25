@@ -12,6 +12,9 @@ class TestRequest extends Validator
             'string',
             'length:2'
         ],
+        'options' => [
+            'in:a:b:d'
+        ]
     ];
 
     public bool $returnOnFailure = true;

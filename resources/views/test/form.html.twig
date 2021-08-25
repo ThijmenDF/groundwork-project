@@ -1,7 +1,7 @@
 <form method='post' class='w-2/5 mx-auto my-10'>
     <input type='text' name='text' value="{{ old('text') }}"><br>
-    {% if invalid('text') %}
-        {{ invalid('text') }}
+    {% if hasError('text') %}
+        {{ getError('text') }}
     {% endif %}
     <br>
     <select name="options">
@@ -9,8 +9,12 @@
         <option value="b">b</option>
         <option value="c">c</option>
     </select>
-    {% if invalid('options') %}
-        {{ invalid('options') }}
+    {% if hasError('options') %}
+        {{ getError('options') }}
+    {% endif %}
+    <input type='text' name='_method' value="{{ old('_method', 'POST') }}"><br>
+    {% if hasError('_method') %}
+        {{ getError('_method') }}
     {% endif %}
     <br>
     <br>
