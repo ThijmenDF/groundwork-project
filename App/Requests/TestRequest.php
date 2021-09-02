@@ -10,10 +10,12 @@ class TestRequest extends Validator
         'text' => [
             'nullable',
             'string',
-            'length:2'
+            'min:2'
         ],
-        'options' => [
-            'in:a:b:d'
+        'file' => [
+            'required',
+            'file',
+            'image'
         ]
     ];
 

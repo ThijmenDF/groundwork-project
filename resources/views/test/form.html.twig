@@ -1,22 +1,14 @@
-<form method='post' class='w-2/5 mx-auto my-10'>
-    <input type='text' name='text' value="{{ old('text') }}"><br>
+<form method='post' enctype="multipart/form-data" >
+    <label for="text">Text</label>
+    <input type='text' name='text' id="text" value="{{ old('text') }}"><br>
     {% if hasError('text') %}
         {{ getError('text') }}
     {% endif %}
     <br>
-    <select name="options">
-        <option value="a">a</option>
-        <option value="b">b</option>
-        <option value="c">c</option>
-    </select>
-    {% if hasError('options') %}
-        {{ getError('options') }}
+    <input type="file" name="file">
+    {% if hasError('file') %}
+        {{ getError('file') }}
     {% endif %}
-    <input type='text' name='_method' value="{{ old('_method', 'POST') }}"><br>
-    {% if hasError('_method') %}
-        {{ getError('_method') }}
-    {% endif %}
-    <br>
     <br>
     <input type='submit' value='Send'>
 </form>
