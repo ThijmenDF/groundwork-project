@@ -11,7 +11,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Groundwork\Server;
 
 // Start the handle server
-$server = Server::getInstance();
+$server = Server::getInstance(__DIR__);
 
 // Handle the request
 $server->handle();
